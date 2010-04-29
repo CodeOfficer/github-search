@@ -1,0 +1,20 @@
+/*
+	chrome-extension://extensionId/popup.html
+	http://code.google.com/chrome/extensions/overview.html
+	http://code.google.com/chrome/extensions/docs.html
+*/
+
+{
+  "name": "Github Search",
+  "version": "1.0",
+  "description": "Integrated Github Searching.",
+  "browser_action": {
+    "default_icon": "assets/icon.png",
+		"default_title": "Github Search",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "http://github.com/",
+		"http://*/*"
+  ]
+}
