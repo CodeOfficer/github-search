@@ -1,11 +1,11 @@
 <li class="project">
   <ul class="repo-stats">
-    <li><a title="Watchers (click to see who is watching)" class="pill pill-watchers" href="/<%= username %>/<%= name %>/watchers">x</a></li>
-    <li><a title="Forks (click to see network)" class="pill pill-forks" href="/<%= username %>/<%= name %>/network"><%= forks %></a></li>
+    <li><a title="Watchers (click to see who is watching)" target="_blank" class="pill pill-watchers" href="http://github.com/<%= username %>/<%= name %>/watchers"><%= followers %></a></li>
+    <li><a title="Forks (click to see network)" target="_blank" class="pill pill-forks" href="http://github.com/<%= username %>/<%= name %>/network"><%= forks %></a></li>
   </ul>
 
   <h3>
-    <a href="/<%= username %>/<%= name %>"><%= name %></a>
+    <a href="http://github.com/<%= username %>/<%= name %>" title="(click to see project)" target="_blank"><%= username %> / <%= name %></a>
   </h3>
 
   <p class="description">
@@ -13,7 +13,8 @@
   </p>
 
   <div class="meta">
-      <p>Forked from <a href="/quirkey/sammy">quirkey/sammy</a> <abbr title="2010-04-28 22:35:34" class="relatize relatized">about 2 hours ago</abbr></p>
+			<!-- <p>Forked from <a href="http://github.com/quirkey/sammy" target="_blank">quirkey/sammy</a> <abbr title="2010-04-28 22:35:34" class="relatize relatized">about 2 hours ago</abbr></p> -->
+			<!-- <p>Created on <abbr title="<%= created %>" class="relatize relatized"><%= created %></abbr></p> -->
       <p>Last updated <abbr title="<%= pushed %>" class="relatize relatized"><%= pushed %></abbr></p>
   </div>
 </li>

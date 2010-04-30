@@ -17,22 +17,14 @@ a {
 	text-decoration:none;
 }
 
-#search_text {
-	width: 75%;
-}
-
-#search_button {
-	width: 20%;
-}
-
-a {
-	color:#4183C4;
-	text-decoration:none;
-}
-
 h3 {
 	font-size:14px;
 	margin:0;
+}
+
+form {
+	margin-bottom: 5px;
+	margin-left: 5px;
 }
 
 p.description  {
@@ -40,6 +32,9 @@ p.description  {
 	font-size:12px;
 	margin:2px 0 10px;
 }
+
+#search_text { width: 75%; }
+#search_button { width: 20%; }
 
 /* graciously ripped from github */
 ul.repositories{margin:0;}

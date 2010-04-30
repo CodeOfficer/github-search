@@ -37,4 +37,4 @@ jQuery.srender = function(template, data, target){
   } else {
     return fn(data);
   };
-}
+};
