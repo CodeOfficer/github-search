@@ -7,9 +7,12 @@
 		"default_title": "Github Search",
     "default_popup": "popup.html"
   },
+	"icons": {
+		"32": "assets/logo32.png",
+		"48": "assets/github_icon48.png",
+		"128": "assets/github_icon128.png"
+	},
   "permissions": [
-    "http://github.com/",
-		"http://*/*",
-		"http://localhost/"
+    "http://github.com/"
   ]
 }
