@@ -51,3 +51,6 @@ ul.repositories ul.repo-stats li a.pill-watchers{background-position:5px 3px;}
 ul.repositories ul.repo-stats li a.pill-watchers:hover{background-position:5px -17px;}
 ul.repositories ul.repo-stats li a.pill-forks{background-position:5px -37px;}
 ul.repositories ul.repo-stats li a.pill-forks:hover{background-position:5px -57px;}
+
+/* mine */
+ul.repositories .meta span.language{float:right;}
