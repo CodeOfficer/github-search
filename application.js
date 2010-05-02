@@ -11,14 +11,21 @@
 			// trick or treat
 			if ($search_text.val()=='') $search_text.val('codeofficer');
 			
+			$repositories.empty();
+			$repositories.append("<li><img src ='assets/ajax-loader.gif' alt='loading' /></li>");
+			
 			// repository search
 			$.get('http://github.com/api/v2/json/repos/search/' + escape($search_text.val()), function(json){				
 				$.get('templates/repository.ejs', function(template){
 					$repositories.empty();
-					$.each(json.repositories, function(index, repository) {
-						var html = $.srender(template, repository);
-						$repositories.append(html);
-					});
+					if (json.repositories.length > 0) {
+						$.each(json.repositories, function(index, repository) {
+							var html = $.srender(template, repository);
+							$repositories.append(html);
+						});
+					} else {
+						$repositories.append("<li>No results found.</li>");
+					};
 				});			
 			});
 

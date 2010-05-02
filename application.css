@@ -4,6 +4,7 @@
 }
 
 body {
+	margin-right: 18px;
   min-width:357px;
   overflow-x:hidden;
 }
