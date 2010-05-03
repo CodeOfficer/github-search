@@ -22,12 +22,15 @@
 						$.each(json.repositories, function(index, repository) {
 							var html = $.srender(template, repository);
 							$repositories.append(html);
+							$("abbr.relatize").timeago();
 						});
 					} else {
 						$repositories.append("<li>No results found.</li>");
 					};
 				});			
 			});
+			
+			
 
 		});
 
