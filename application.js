@@ -1,6 +1,5 @@
 ;(function($) {
 	$(function() {
-		
 		var $repositories = $('#repositories');
 		var $search_text = $('#search_text');
 		
@@ -8,8 +7,7 @@
 		$search_text.focus();
 
 		$('#github_search').submit(function(e) {
-        
-            e.preventDefault();
+      e.preventDefault();
             
 			// trick or treat
 			if ($search_text.val()=='') $search_text.val('codeofficer');
@@ -32,10 +30,6 @@
 					};
 				});			
 			});
-			
-			
-
 		});
-
 	});
 })(jQuery);
