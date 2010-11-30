@@ -7,7 +7,10 @@
 		// give the search box focus
 		$search_text.focus();
 
-		$('#github_search').submit(function() {
+		$('#github_search').submit(function(e) {
+        
+            e.preventDefault();
+            
 			// trick or treat
 			if ($search_text.val()=='') $search_text.val('codeofficer');
 			
