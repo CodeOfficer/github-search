@@ -16,7 +16,7 @@
 			$repositories.append("<li><img src ='assets/ajax-loader.gif' alt='loading' /></li>");
 			
 			// repository search
-			$.get('http://github.com/api/v2/json/repos/search/' + escape($search_text.val()), function(json){				
+			$.get('https://github.com/api/v2/json/repos/search/' + escape($search_text.val()), function(json){				
 				$.get('templates/repository.ejs', function(template){
 					$repositories.empty();
 					if (json.repositories.length > 0) {
