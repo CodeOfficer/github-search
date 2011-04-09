@@ -7,6 +7,7 @@ body {
 	margin-right: 18px;
   min-width:357px;
   overflow-x:hidden;
+	font-family: sans-serif;
 }
 
 body * {
